@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Css/style.css" />
+		<title>Redux</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="title">Todo Project</h2>
+			<div class="header-wrapper">
+				<div class="header-left">
+					<input class="input" placeholder="add new todo ..." />
+					<button class="btn add-btn">ADD</button>
+				</div>
+				<select class="select-box">
+					<option value="all">all</option>
+					<option value="completed">completed</option>
+					<option value="uncompleted">uncompleted</option>
+				</select>
+			</div>
+			<div class="todos-container"></div>
+		</div>
+
+		<script src="/Js/redux.min.js"></script>
+		<script src="/Js/app.js"></script>
+	</body>
+</html>
