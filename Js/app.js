@@ -28,7 +28,7 @@ const completeTodoActionCreators = (id) => {
 };
 
 // create a store with redux
-const store = Redux.createStore(todoReducer);
+const store = createStore(todoReducer);
 
 // todo reducer
 function todoReducer(state = [], action) {
@@ -101,7 +101,7 @@ function completeTodoHandler(todoId) {
 	generateTodosToDom(todosArray);
 }
 
-//
+// add event for changing filter
 selectBoxElement.addEventListener("change", () => {
 	const todosArray = store.getState();
 

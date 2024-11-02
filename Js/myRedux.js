@@ -1,10 +1,10 @@
-function createStore(reducer) {
-    let state
-	function dispatch() {}
-	function getState() {}
-    return {dispatch, getState}
+function createStore(myReducer) {
+	let state;
+	function dispatch(action) {
+		state = myReducer(state, action);
+	}
+	function getState() {
+		return state;
+	}
+	return { dispatch, getState };
 }
-
-
-const myStore = createStore(() => {})
-console.log(myStore); // {dispatch , getState}
